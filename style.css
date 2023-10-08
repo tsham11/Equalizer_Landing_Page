@@ -1,0 +1,348 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+  background-image: url("./images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right -200px top -250px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lt-img {
+  display: none;
+}
+
+.logo {
+  width: 146.093px;
+  margin: 40px auto 32px 24px;
+}
+
+.header {
+  color: #191826;
+  padding: 0 24px;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.455px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 64px;
+}
+
+.main {
+  width: 375px;
+  height: 600px;
+  border-radius: 12px;
+  background: url("./images/bg-pattern-2.svg") #191826 no-repeat center top /280px 420px;
+  margin-top: 98px;
+  position: relative;
+}
+
+.phone {
+  width: 208.972px;
+  height: 430px;
+  position: absolute;
+  top: -98px;
+  right: 80px;
+}
+
+.eq {
+  height: 546px;
+  position: absolute;
+  border-radius: 12px;
+  background: #FA7453;
+  top: 380px;
+  color: #FCFAF9;
+  padding: 48px 36px;
+}
+
+.eq h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.eq p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 12px 0 36px 0;
+}
+
+.eq .price {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 6px;
+}
+
+.eq .month {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+button {
+  width: 296px;
+  height: 61px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6px;
+}
+
+.ios {
+  margin-bottom: 16px;
+  color: #FCFAF9;
+  background-color: #191826;
+}
+
+.ios img,
+.android img {
+  margin-right: 7px;
+  width: 16px;
+  height: 20px;
+}
+
+.android {
+  background-color: #FCFAF9;
+  color: #191826;
+}
+
+footer {
+  margin-top: 346px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0px 24px 64px 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 20px;
+  margin: 64px auto 80px 24px;
+}
+
+@media (min-width:768px) {
+  body {
+    background-image: url(./images/bg-main-tablet.png);
+  }
+
+  .logo {
+    margin: 62px auto 0px 39px;
+  }
+
+  .lt-img {
+    display: block;
+    width: 266.667px;
+    height: 400px;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+  }
+
+  .header {
+    padding: 0 39px;
+  }
+
+  .header h1 {
+    width: 520px;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.727px;
+    margin-top: 95px;
+    margin-bottom: 28px;
+  }
+
+  .header p {
+    width: 514px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 111px;
+  }
+
+  .main {
+    width: 696px;
+    height: 600px;
+    margin: 138px 39px 0 33px;
+  }
+
+  .phone {
+    width: 270.206px;
+    height: 556px;
+    top: -138px;
+    left: 64px;
+  }
+
+  .eq {
+    width: 399px;
+    height: 546px;
+    top: 150px;
+    left: 239px;
+    padding: 48px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 182px;
+    padding: 0 39px 85px 0px;
+  }
+
+  .ft-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer p {
+    margin: 32px 230px 0px 33px;
+    width: 366px;
+  }
+}
+
+@media (min-width:1440px) {
+  body {
+    background-image: url("./images/bg-main-desktop.png");
+  }
+
+  .logo {
+    width: 146.093px;
+    margin: 62px auto 0px 166px;
+  }
+
+  .header {
+    color: #191826;
+    padding: 0 165px;
+  }
+
+  .header h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    width: 1015px;
+    margin-top: 127px;
+    margin-bottom: 40px;
+  }
+
+  .header p {
+    width: 825px;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 117px;
+  }
+
+  .lt-img {
+    right: 0px;
+  }
+
+  .main {
+    width: 1110px;
+    height: 600px;
+    margin: 194px 165px 0 165px;
+  }
+
+  .phone {
+    width: 280px;
+    height: 606px;
+    top: -194px;
+    left: 118px;
+  }
+
+  .eq {
+    width: 446px;
+    height: 625px;
+    top: 90px;
+    left: 569px;
+    padding: 58px;
+  }
+
+  .eq h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .eq p {
+    font-size: 20px;
+    line-height: 34px;
+    margin: 22px 0 39px 0;
+  }
+
+  button {
+    width: 333px;
+    height: 61px;
+  }
+
+  .ios:hover {
+    cursor: pointer;
+    background: #66E2DC;
+  }
+
+  .android:hover {
+    cursor: pointer;
+    background: #FFB964;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 202px 165px 91px;
+  }
+
+  .ft-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ft-div p {
+    width: 366px;
+  }
+
+  footer p {
+    margin: 0 359px 0 137px;
+    align-self: center;
+  }
+
+  footer .logo {
+    margin: 0;
+    margin-top: -70px;
+  }
+
+  .icons:hover {
+    cursor: pointer;
+  }
+}
